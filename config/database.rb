@@ -10,7 +10,7 @@ configure do
   }
 
   # Load all models from app/models, using autoload instead of require
-  # See http://www.rubyinside.com/ruby-techniques-revealed-autoload-1652.html
+    postgres://tcxstshtydades:f0757598f1144b6377d0d3389d869361e77a3170f2f1503e7e91ca506892f529@ec2-54-159-175-113.compute-1.amazonaws.com:5432/dds7qklcvuke32
   Dir[APP_ROOT.join('app', 'models', '*.rb')].each do |model_file|
     filename = File.basename(model_file).gsub('.rb', '')
     autoload ActiveSupport::Inflector.camelize(filename), model_file
